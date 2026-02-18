@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Royal Vision AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<div class="title">Royal Vision AI</div>
+
+<div class="subtitle">
+Upload or paste image URL for AI object detection
+</div>
+
+</div>
+
+
+<div class="grid">
+
+<!-- LEFT -->
+<div class="card">
+
+<label>Upload Image</label>
+<input type="file" id="fileInput">
+
+<label style="margin-top:20px;display:block;">OR Image URL</label>
+<input type="text" id="urlInput" placeholder="https://example.com/image.jpg">
+
+<button onclick="predict()">Analyze Image</button>
+
+</div>
+
+
+<!-- RIGHT -->
+<div class="card">
+
+<div class="preview" id="preview">
+No Image Selected
+</div>
+
+<div class="result" id="result">
+Awaiting prediction...
+</div>
+
+</div>
+
+</div>
+<!-- LOGBOOK SECTION -->
+
+<div class="logbook-container">
+
+<div class="logbook-title">
+Vehicle Logbook
+</div>
+
+<div id="logbookList">
+
+Loading logbook...
+
+</div>
+
+</div>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
